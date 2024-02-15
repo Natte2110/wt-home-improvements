@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+      <div
+        class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
+      >
+        <div class="col-lg-8 align-self-end">
+          <h1 class="text-white font-weight-bold text-capitalize">
+            Maintenance, repairs and development to your home
+          </h1>
+          <hr class="divider">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 mb-5">
+            <i class="fa-solid fa-phone"></i> Call us on <b>+44 7900 684 594</b> for a free estimate
+          </p>
+          <a class="btn btn-primary btn-xl" href="">Get A Quote</a>
+          <div class="scroll-indicator"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Services -->
+  <section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+      <h2 class="text-center mt-0">What Can We Do For You?</h2>
+      <hr class="divider">
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-lg-6 col-md-6 text-center">
+          <div class="mt-5">
+            <div class="mb-2">
+                <img src="{{url_for('static',filename='media/trustmark.gif')}}" alt="">
+            </div>
+            <h3 class="h4 mb-2">General Repairs</h3>
+            <p class="text-muted mb-0">
+                WT Home Improvements is registered with <a href="https://www.trustmark.org.uk/homeowner" target="_blank" rel="noopener noreferrer">Trust Mark</a>, so you can be sure we operate a trustworthy, reliable service to government endorsed standards.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 text-center">
+          <div class="mt-5">
+            <div class="mb-2">
+                <img src="{{url_for('static',filename='media/vanhouse.jpg')}}" alt="">
+            </div>
+            <h3 class="h4 mb-2">Any Job Considered</h3>
+            <p class="text-muted mb-0">
+                With years of experience dealing with fitting and repairing UPVC windows, doors and conservatories, as well as general household development and maintenance, WT Home Improvements are happy to <a href="">give you an estimate</a> for any job.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="portfolio">
+    <div class="container-fluid p-0">
+      <h3 class="text-center mt-2">Click/Tap on any of the below images to see how it looked before!</h3>
+      <hr class="divider">
+        <div class="row g-0">
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="static/media/portfolio/fullsize/1.jpg" title="Window Conversion - Before">
+                    <img class="img-fluid" src="static/media/portfolio/thumbnails/1.jpg" alt="...">
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Windows</div>
+                        <div class="project-name">Window Conversion</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="static/media/portfolio/fullsize/2.jpg" title="Kitchen Conversion - Before">
+                    <img class="img-fluid" src="static/media/portfolio/thumbnails/2.jpg" alt="...">
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Kitchens</div>
+                        <div class="project-name">Kitchen Conversion</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="static/media/portfolio/fullsize/3.jpg" title="Bathroom Conversion - Before">
+                    <img class="img-fluid" src="static/media/portfolio/thumbnails/3.jpg" alt="...">
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Bathrooms</div>
+                        <div class="project-name">Bathroom Conversion</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="static/media/portfolio/fullsize/4.jpg" title="Windows & Doors - Before">
+                    <img class="img-fluid" src="static/media/portfolio/thumbnails/4.jpg" alt="...">
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Windows & Doors</div>
+                        <div class="project-name">House Facelift</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="static/media/portfolio/fullsize/5.jpg" title="Sunroof Conversion - Before">
+                    <img class="img-fluid" src="static/media/portfolio/thumbnails/5.jpg" alt="...">
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Windows</div>
+                        <div class="project-name">Sunroof Conversion</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="static/media/portfolio/fullsize/6.jpg" title="House Front Improvements - Before">
+                    <img class="img-fluid" src="static/media/portfolio/thumbnails/6.jpg" alt="...">
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Doors & Windows</div>
+                        <div class="project-name">House Front Improvements</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+  
+{% endblock %}
