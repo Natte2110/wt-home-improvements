@@ -8,8 +8,7 @@ def home():
     Returns:
         The index.html page with the title of "Home"
     """
-    # return render_template("index.html", title="Home")
-    return "<h1>Test</h1>"
+    return render_template("index.html", title="Home")
 
 
 # @app.errorhandler(404)
